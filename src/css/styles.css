@@ -1469,3 +1469,210 @@ color: var(--clr-white);
     width: 0%;
     transition: width 2s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+/* Юридические страницы (общие стили) */
+.pages {
+    padding: 160px 0 100px;
+    background: var(--clr-bg);
+    /* Горчичный фон */
+    min-height: 100vh;
+}
+
+.pages__back {
+    margin-bottom: 40px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: var(--clr-surface);
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    color: var(--clr-white);
+    transform: translateX(-5px);
+}
+
+.pages__title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    color: var(--clr-surface);
+    margin-bottom: 60px;
+    line-height: 1.1;
+}
+
+.pages__content {
+    max-width: 850px;
+}
+
+.policy-section {
+    margin-bottom: 50px;
+}
+
+.policy-section h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--clr-surface);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.pages__content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(26, 29, 35, 0.9);
+    margin-bottom: 20px;
+}
+
+.pages__list {
+    list-style: none;
+    padding: 0;
+}
+
+.pages__list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: rgba(26, 29, 35, 0.9);
+}
+
+.pages__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 2px;
+    background: var(--clr-primary);
+    /* Бирюзовая черта списка */
+}
+
+.pages__contact-box {
+    margin-top: 60px;
+    padding: 40px;
+    background: var(--clr-surface);
+    /* Темная подложка для контактов */
+    border-radius: 24px;
+    color: var(--clr-white);
+}
+
+.pages__contact-box p {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.pages__link {
+    font-size: 1.2rem;
+    color: var(--clr-mustard) !important;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/* Специфические стили для Дисклеймера */
+.disclaimer-block {
+    background: var(--clr-surface);
+    /* Темная подложка */
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+}
+
+.disclaimer-block:hover {
+    border-color: var(--clr-primary);
+    transform: translateX(5px);
+}
+
+.disclaimer-block strong {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--clr-primary);
+    /* Бирюзовый заголовок блока */
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.disclaimer-block i {
+    width: 20px;
+    height: 20px;
+}
+
+.disclaimer-block p {
+    color: #94a3b8 !important;
+    /* Приглушенный текст внутри блоков */
+    font-size: 1rem !important;
+    margin-bottom: 0 !important;
+}
+
+/* Особый стиль для предупреждения */
+.disclaimer-block--warning {
+    border-left: 4px solid #ff5555;
+    background: linear-gradient(90deg, rgba(255, 85, 85, 0.05) 0%, var(--clr-surface) 100%);
+}
+
+.disclaimer-block--warning strong {
+    color: #ff5555;
+}
+
+/* Акцентный блок (18+) */
+.disclaimer-block--accent {
+    border: 1px solid var(--clr-mustard);
+}
+
+.disclaimer-block--accent strong {
+    color: var(--clr-mustard);
+}
+
+.pages__footer-note {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+/* Специальный стиль для нумерованного списка процедур */
+.pages__order-list {
+    counter-reset: custom-counter;
+    list-style: none;
+    padding-left: 0;
+}
+
+.pages__order-list li {
+    counter-increment: custom-counter;
+    position: relative;
+    padding-left: 45px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.pages__order-list li::before {
+    content: counter(custom-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: var(--clr-mustard);
+    color: var(--clr-surface);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+
+/* Ссылка внутри темного блока */
+.disclaimer-block a.pages__link {
+    color: var(--clr-primary) !important;
+    text-decoration: underline;
+}

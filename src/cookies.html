@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jolt-Drivex | IT-школа нового поколения</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23121212'/%3E%3Cpath d='M10 17L17 6L16 15H22L15 26L16 17H10Z' fill='%23D4A017'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+  <body>
+    <load
+      src="./partials/header.html"
+/>
+
+<main class="pages">
+  <section class="pages__section">
+    <div class="container">
+      <div class="pages__back">
+        <a href="./#hero" class="back-link">
+          <i data-lucide="arrow-left"></i> Вернуться на главную
+        </a>
+      </div>
+
+      <h1 class="pages__title">Политика использования файлов cookie</h1>
+
+      <div class="pages__content">
+        <div class="policy-block">
+          <p>
+            Добро пожаловать в <strong>Jolt-Drivex</strong>! Чтобы улучшить ваш опыт взаимодействия с нашей
+            образовательной платформой, обеспечить её корректную работу и анализировать активность пользователей, мы
+            используем файлы cookie и схожие технологии.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Что такое файлы cookie?</h2>
+          <p>
+            Файл cookie — это небольшой фрагмент данных (текстовый файл), который веб-сайт сохраняет на вашем
+            устройстве, когда вы его посещаете. Это позволяет платформе "помнить" ваши действия и предпочтения
+            (например, прогресс в курсах, язык, настройки интерфейса) в течение определенного времени.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Какие типы файлов cookie мы используем?</h2>
+          <p>Мы классифицируем используемые файлы cookie по следующим категориям:</p>
+          <ul class="pages__list">
+            <li>
+              <strong>Строго необходимые:</strong> Критически важны для функционирования IT-школы. Они позволяют вам
+              перемещаться по сайту и использовать доступ к защищенным учебным разделам.
+            </li>
+            <li>
+              <strong>Аналитические:</strong> Помогают нам понять, какие курсы наиболее популярны и как пользователи
+              взаимодействуют с AI-тренажерами. Все данные анонимны.
+            </li>
+            <li>
+              <strong>Функциональные:</strong> Запоминают ваш выбор (имя пользователя, регион) для предоставления более
+              персонализированного опыта обучения.
+            </li>
+            <li>
+              <strong>Маркетинговые:</strong> Используются для доставки релевантных предложений по обучению и измерения
+              эффективности наших кампаний в Великобритании и ЕС.
+            </li>
+          </ul>
+        </div>
+
+        <div class="policy-section">
+          <h2>Управление файлами cookie</h2>
+          <p>
+            Вы имеете полный контроль над данными. Большинство современных браузеров позволяют удалять и блокировать
+            cookie через настройки. Обратите внимание: отключение строго необходимых файлов может привести к
+            некорректной работе личного кабинета и учебных материалов.
+          </p>
+        </div>
+
+        <div class="policy-section">
+          <h2>Обновления и контакты</h2>
+          <p>
+            Мы можем обновлять эту Политику, чтобы отразить изменения в технологиях Jolt-Drivex или законодательстве
+            Великобритании. Актуальная версия всегда доступна на этой странице.
+          </p>
+
+          <div class="pages__contact-box">
+            <p>Если у вас возникли вопросы, свяжитесь с нашей службой поддержки:</p>
+            <a href="mailto:hello@jolt-drivex.click" class="pages__link">hello@jolt-drivex.click</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <load src="./partials/footer.html" />
+<div class="cookie-popup" id="cookie-popup">
+  <div class="cookie-popup__content">
+    <div class="cookie-popup__icon">
+      <i data-lucide="cookie"></i>
+    </div>
+    <div class="cookie-popup__text">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+          политике</a>.</p>
+    </div>
+    <div class="cookie-popup__actions">
+      <button class="btn btn--primary btn--sm" id="accept-cookies">Принять</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script type="module" src="./main.js"></script>
+</body>
+
+</html>
