@@ -1,19 +1,29 @@
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-menu__nav">
+    <a href="#hero" class="mobile-menu__link">Главная</a>
+    <a href="#courses" class="mobile-menu__link">Курсы</a>
+    <a href="#innovations" class="mobile-menu__link">Инновации</a>
+    <a href="#skills" class="mobile-menu__link">Навыки</a>
+    <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+  </nav>
+</div>
+
 <header class="header">
-  <div class="container">
+  <div class="container header__wrapper">
+    <a href="#" class="logo">JOLT<span>_</span>DRIVEX</a>
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="#hero" class="nav__link">Главная</a></li>
+        <li><a href="#courses" class="nav__link">Курсы</a></li>
+        <li><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="#skills" class="nav__link">Навыки</a></li>
       </ul>
     </nav>
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--outline desktop-only">Связаться</a>
+      <button class="burger" id="burger-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
