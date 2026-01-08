@@ -391,7 +391,7 @@ body {
 .platform__tag {
     display: inline-block;
     padding: 6px 16px;
-    background: var(--clr-white);
+    background: rgba(0, 0, 0, 0.05);
     border: 1px solid var(--clr-surface);
     border-radius: 100px;
     font-size: 0.8rem;
@@ -404,16 +404,24 @@ body {
 .platform__title {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 4vw, 3rem);
-    color: var(--clr-white);
+    color: var(--clr-surface);
     line-height: 1.1;
     margin-bottom: 24px;
 }
-
+.innovations-title{
+    color: var(--clr-white);
+}
+.innovations-tag{
+background: var(--clr-white);
+}
+.platform__subtitle.innovations-subtitle{
+color: var(--clr-white);
+}
 .platform__subtitle {
     max-width: 650px;
     margin: 0 auto;
     font-size: 1.1rem;
-    color: var(--clr-white);
+    color: rgba(26, 29, 35, 0.8);
 }
 
 /* Grid Layout */
